@@ -4,10 +4,10 @@ import { Routes, Route } from 'react-router-dom'
 import TopBar from "./Global/TopBar"
 import SideBar from './Global/SideBar';
 
-// import Dashboard from './Scenes/Dashboard';
-// import Team from './Scenes/Team';
+import Dashboard from './Scenes/Dashboard';
+import Team from './Scenes/Team';
 // import Invoices from './Scenes/Invoices';
-// import Contacts from './Scenes/Contacts';
+import Contacts from './Scenes/Contacts';
 // import Bar from './Scenes/Bar';
 // import Form from './Scenes/Form';
 // import Line from './Scenes/Line';
@@ -31,16 +31,16 @@ function App() {
           <main className="content">
             <TopBar />
             <Routes>
-              {/* <Route path="/" element={<Dashboard />} /> */}
-              {/* <Route path="/team" element={<Team />} />
+              <Route path="/" element={<Dashboard />} />
+              <Route path="/team" element={<Team />} />
               <Route path="/contacts" element={<Contacts />} />
-              <Route path="/invoices" element={<Invoices />} />
-              <Route path="/bar" element={<Bar />} />
-              <Route path="/pie" element={<Pie />} />
-              <Route path="/line" element={<Line />} />
-              <Route path="/faq" element={<FAQ />} />
-              <Route path="/geography" element={<Geography />} />
-              <Route path="/calendar" element={<Calendar />} />  */}
+              {/* <Route path="/invoices" element={<Invoices />} /> */}
+              {/* <Route path="/bar" element={<Bar />} /> */}
+              {/* <Route path="/pie" element={<Pie />} /> */}
+              {/* <Route path="/line" element={<Line />} /> */}
+              {/* <Route path="/faq" element={<FAQ />} /> */}
+              {/* <Route path="/geography" element={<Geography />} /> */}
+              {/* <Route path="/calendar" element={<Calendar />} />   */}
             </Routes>
 
 

@@ -21,6 +21,7 @@ import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
 const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
+  
   return (
     <MenuItem
       active={selected === title}
@@ -81,7 +82,7 @@ const Sidebar = () => {
                 ml="15px"
               >
                 <Typography variant="h3" color={colors.grey[100]}>
-                  Hannah's <br/> Dashboard
+                  Welcome <br /> back!
                 </Typography>
                 <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
                   <MenuOutlinedIcon />
@@ -101,6 +102,7 @@ const Sidebar = () => {
                   style={{ cursor: "pointer", borderRadius: "50%" }}
                 />
               </Box>
+
               <Box textAlign="center">
                 <Typography
                   variant="h2"
@@ -108,10 +110,11 @@ const Sidebar = () => {
                   fontWeight="bold"
                   sx={{ m: "10px 0 0 0" }}
                 >
-                  Ed Roh
+                  Hannah Feehan
                 </Typography>
+
                 <Typography variant="h5" color={colors.greenAccent[500]}>
-                  VP Fancy Admin
+                  Full-stack Developer
                 </Typography>
               </Box>
             </Box>
@@ -133,6 +136,7 @@ const Sidebar = () => {
             >
               Data
             </Typography>
+
             <Item
               title="Manage Team"
               to="/team"
@@ -140,6 +144,7 @@ const Sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
+
             <Item
               title="Contacts Information"
               to="/contacts"
@@ -147,6 +152,7 @@ const Sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
+
             <Item
               title="Invoices Balances"
               to="/invoices"
@@ -162,6 +168,7 @@ const Sidebar = () => {
             >
               Pages
             </Typography>
+
             <Item
               title="Profile Form"
               to="/form"
@@ -183,7 +190,6 @@ const Sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
-
             <Typography
               variant="h6"
               color={colors.grey[300]}
@@ -191,6 +197,7 @@ const Sidebar = () => {
             >
               Charts
             </Typography>
+
             <Item
               title="Bar Chart"
               to="/bar"
