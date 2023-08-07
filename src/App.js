@@ -8,12 +8,12 @@ import Dashboard from './Scenes/Dashboard';
 import Team from './Scenes/Team';
 import Invoices from './Scenes/Invoices';
 import Contacts from './Scenes/Contacts';
-// import Bar from './Scenes/Bar';
+import Bar from './Scenes/Bar';
 import Form from './Scenes/Form';
-// import Line from './Scenes/Line';
-// import Pie from './Scenes/Pie';
+import Line from './Scenes/Line';
+import Pie from './Scenes/Pie';
 import FAQ from './Scenes/FAQ';
-// import Geography from './Scenes/Geography';
+import Geography from './Scenes/Geography';
 import Calendar from './Scenes/Calendar';
 
 
@@ -36,11 +36,11 @@ function App() {
               <Route path="/contacts" element={<Contacts />} />
               <Route path="/invoices" element={<Invoices />} />
               <Route path="/form" element={<Form />} />
-              {/* <Route path="/bar" element={<Bar />} /> */}
-              {/* <Route path="/pie" element={<Pie />} /> */}
-              {/* <Route path="/line" element={<Line />} /> */}
+              <Route path="/bar" element={<Bar />} />
+              <Route path="/pie" element={<Pie />} />
+              <Route path="/line" element={<Line />} />
               <Route path="/faq" element={<FAQ />} />
-              {/* <Route path="/geography" element={<Geography />} /> */}
+              <Route path="/geography" element={<Geography />} />
               <Route path="/calendar" element={<Calendar />} />
             </Routes>
 
