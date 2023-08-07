@@ -21,7 +21,7 @@ import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
 const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
-  
+
   return (
     <MenuItem
       active={selected === title}
@@ -98,7 +98,7 @@ const Sidebar = () => {
                   alt="profile-user"
                   width="100px"
                   height="100px"
-                  src={`../../assets/user.png`}
+                  src={`../../Assets/profilePic.png`}
                   style={{ cursor: "pointer", borderRadius: "50%" }}
                 />
               </Box>
